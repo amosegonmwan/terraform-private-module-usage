@@ -24,7 +24,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 ### 4. Update Your GitHub Actions Workflow
 Modify your workflow file to include the ssh-agent and configure it to use the private SSH key.
-yaml```
+```yaml
 name: terraform
 
 on:
