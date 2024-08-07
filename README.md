@@ -68,7 +68,7 @@ jobs:
 ### 5. Reference the Private Module in Your Terraform Code
 In your Terraform configuration, reference the private module using the SSH URL format.
 
-hcl```
+```hcl
 module "example" {
   source = "git@github.com:username/private-module-repo.git//path/to/module"
   # Other module variables
@@ -78,7 +78,7 @@ module "example" {
 ### 6. Run the Workflow
 Push your changes to the GitHub repository to trigger the workflow.
 
-bash```
+```bash
 git add .
 git commit -m "Setup Terraform with private module"
 git push origin main
